@@ -1,0 +1,188 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Users\\Sitt\\source\\repos\\AboutSelf\\AboutSelf\\AboutSelf.iOS\\AboutSelf.iOS.csproj": {}
+  },
+  "projects": {
+    "E:\\Users\\Sitt\\source\\repos\\AboutSelf\\AboutSelf\\AboutSelf.iOS\\AboutSelf.iOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Users\\Sitt\\source\\repos\\AboutSelf\\AboutSelf\\AboutSelf.iOS\\AboutSelf.iOS.csproj",
+        "projectName": "AboutSelf.iOS",
+        "projectPath": "E:\\Users\\Sitt\\source\\repos\\AboutSelf\\AboutSelf\\AboutSelf.iOS\\AboutSelf.iOS.csproj",
+        "packagesPath": "C:\\Users\\Sitt\\.nuget\\packages\\",
+        "outputPath": "E:\\Users\\Sitt\\source\\repos\\AboutSelf\\AboutSelf\\AboutSelf.iOS\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "E:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Sitt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {
+              "E:\\Users\\Sitt\\source\\repos\\AboutSelf\\AboutSelf\\AboutSelf\\AboutSelf.csproj": {
+                "projectPath": "E:\\Users\\Sitt\\source\\repos\\AboutSelf\\AboutSelf\\AboutSelf\\AboutSelf.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "LiteDB": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "MagicGradients": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Microsoft.Toolkit.Uwp.UI.Controls": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "MoneyFox.Microcharts.Forms": {
+              "target": "Package",
+              "version": "[1.1.0.1, )"
+            },
+            "ReactiveUI": {
+              "target": "Package",
+              "version": "[11.2.1, )"
+            },
+            "ReactiveUI.Fody": {
+              "target": "Package",
+              "version": "[11.2.1, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.3.0.908675, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "E:\\Users\\Sitt\\source\\repos\\AboutSelf\\AboutSelf\\AboutSelf\\AboutSelf.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Users\\Sitt\\source\\repos\\AboutSelf\\AboutSelf\\AboutSelf\\AboutSelf.csproj",
+        "projectName": "AboutSelf",
+        "projectPath": "E:\\Users\\Sitt\\source\\repos\\AboutSelf\\AboutSelf\\AboutSelf\\AboutSelf.csproj",
+        "packagesPath": "C:\\Users\\Sitt\\.nuget\\packages\\",
+        "outputPath": "E:\\Users\\Sitt\\source\\repos\\AboutSelf\\AboutSelf\\AboutSelf\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Sitt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "LiteDB": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "MagicGradients": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "MoneyFox.Microcharts.Forms": {
+              "target": "Package",
+              "version": "[1.1.0.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Plugin.Permissions": {
+              "target": "Package",
+              "version": "[3.0.0.12, )"
+            },
+            "ReactiveUI": {
+              "target": "Package",
+              "version": "[11.2.1, )"
+            },
+            "ReactiveUI.Fody": {
+              "target": "Package",
+              "version": "[11.2.1, )"
+            },
+            "ThriveGmbH.BottomNavigationBar.XF": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.3.0.908675, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:magic="clr-namespace:MagicGradients;assembly=MagicGradients"
+             xmlns:custom="clr-namespace:AboutSelf.Components"
+             mc:Ignorable="d"
+             x:Class="AboutSelf.Pages.HowIFeel"
+             Title="How I feel"
+             IconImageSource="mask24.png">
+
+    <ContentPage.Content>
+        <Grid>
+            <magic:GradientView VerticalOptions="FillAndExpand">
+                <magic:GradientView.GradientSource>
+                    <magic:LinearGradient Angle="0">
+                        <magic:GradientStop Color="#61008E" Offset="0" />
+                        <magic:GradientStop Color="#2DA6AE" Offset="1" />
+                    </magic:LinearGradient>
+                </magic:GradientView.GradientSource>
+            </magic:GradientView>
+
+            <custom:GestureScrollView x:Name="SwipeScrollView">
+                <StackLayout>
+                    <!--<StackLayout Orientation="Horizontal" HeightRequest="24" Spacing="0">
+                    <Label Text="About" TextColor="White" FontSize="18" />
+                    <Label Text="Self"  FontAttributes="Bold" FontSize="18" TextColor="#FFDFFC"/>
+                </StackLayout>-->
+
+                    <Label Text="My main emotion so far has been:" 
+                       TextColor="#61008E"
+                       FontAttributes="Bold"
+                       FontSize="16"
+                       BackgroundColor="#C8A4E5" 
+                       HeightRequest="48"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"/>
+
+                    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Command="{Binding JoyButtonCommand}" Grid.Row="0" Grid.Column="0" ImageSource="Joy100.png"  BackgroundColor="Transparent" Pressed="Button_Pressed" Released="Button_Released"/>
+                        <Button Command="{Binding AngerButtonCommand}" Grid.Row="0" Grid.Column="1" ImageSource="Anger100.png"  BackgroundColor="Transparent"  Pressed="Button_Pressed" Released="Button_Released"/>
+                        <Button Command="{Binding DisgustButtonCommand}" Grid.Row="0" Grid.Column="2" ImageSource="Disgust100.png"  BackgroundColor="Transparent"  Pressed="Button_Pressed" Released="Button_Released"/>
+
+                        <Button Command="{Binding ContemptButtonCommand}" Grid.Row="1" Grid.Column="0" ImageSource="Contempt100.png"  BackgroundColor="Transparent"  Pressed="Button_Pressed" Released="Button_Released"/>
+                        <Button Command="{Binding SadnessButtonCommand}" Grid.Row="1" Grid.Column="1" ImageSource="Sadness100.png"  BackgroundColor="Transparent"  Pressed="Button_Pressed" Released="Button_Released"/>
+                        <Button Command="{Binding FearButtonCommand}" Grid.Row="1" Grid.Column="2" ImageSource="Fear100.png"  BackgroundColor="Transparent"  Pressed="Button_Pressed" Released="Button_Released"/>
+
+                        <Button Command="{Binding SurpriseButtonCommand}" Grid.Row="2" Grid.Column="1" ImageSource="Surprise100.png"  BackgroundColor="Transparent"  Pressed="Button_Pressed" Released="Button_Released"/>
+
+                    </Grid>
+                </StackLayout>
+            </custom:GestureScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

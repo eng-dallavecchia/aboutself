@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:magic="clr-namespace:MagicGradients;assembly=MagicGradients"
+             xmlns:charts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             xmlns:custom="clr-namespace:AboutSelf.Components"
+             BackgroundColor="#4361A1"
+             
+             Title="My emotions"
+             IconImageSource="diamond24.png"
+             mc:Ignorable="d"
+             x:Class="AboutSelf.Pages.Today">
+
+
+
+    <ContentPage.Content>
+
+        <Grid>
+            <magic:GradientView VerticalOptions="FillAndExpand">
+                <magic:GradientView.GradientSource>
+                    <magic:LinearGradient Angle="0">
+                        <magic:GradientStop Color="#61008E" Offset="0" />
+                        <magic:GradientStop Color="#2DA6AE" Offset="1" />
+                    </magic:LinearGradient>
+                </magic:GradientView.GradientSource>
+            </magic:GradientView>
+            
+            <custom:GestureScrollView x:Name="SwipeScrollView">
+                <StackLayout>
+                    <Label Text="My emotional life:" 
+                       TextColor="#61008E"
+                       FontAttributes="Bold"
+                       FontSize="16"
+                       BackgroundColor="#C8A4E5" 
+                       HeightRequest="48"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"/>
+
+                    <Label Text="Today"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       FontSize="16"/>
+
+                    <Grid Margin="9,15,9,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="32"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Image Grid.Row="0" Grid.Column="0" Source="joy20.png"/>
+                        <Image Grid.Row="0" Grid.Column="1" Source="anger20.png"/>
+                        <Image Grid.Row="0" Grid.Column="2" Source="disgust20.png"/>
+                        <Image Grid.Row="0" Grid.Column="3" Source="contempt20.png"/>
+                        <Image Grid.Row="0" Grid.Column="4" Source="sadness20.png"/>
+                        <Image Grid.Row="0" Grid.Column="5" Source="fear20.png"/>
+                        <Image Grid.Row="0" Grid.Column="6" Source="surprise20.png"/>
+
+                    </Grid>
+                    <charts:ChartView
+                    x:Name="DayChart"
+                    Chart="{Binding DayChart}"
+                    MinimumHeightRequest="150"
+                    VerticalOptions="FillAndExpand"
+                    >
+                    </charts:ChartView>
+
+
+                    <Button Text="Share"
+                            BackgroundColor="Transparent"
+                            TextColor="White"
+                            Command="{Binding ShareButtonCommand}"/>
+
+                    <Label Text="Swipe to see your month"
+                            TextColor="White"
+                            FontSize="16"
+                           HorizontalTextAlignment="Center"
+                           />
+                </StackLayout>
+
+            </custom:GestureScrollView>
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>
