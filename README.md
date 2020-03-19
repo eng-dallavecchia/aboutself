@@ -10,6 +10,7 @@
   <li>View for the current month</li>
   <li>View for the current year</li>
 </ul>
+<hr>
 <div>
 <img src="/screens/feelings.png" alt="Feelings" height="250">
 <img src="/screens/reasons.png" alt="Reasons" height="250">
@@ -17,3 +18,4 @@
 <img src="/screens/month.png" alt="Month" height="250">
 <img src="/screens/year.png" alt="Year" height="250">
 </div>
+
