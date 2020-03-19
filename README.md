@@ -1,4 +1,5 @@
-<h1>Emotion Management</h1>
+<h1>AboutSelf</h1>
+<h3>Emotion Management</h3>
 <p>This is a simple app to help people keep track of their emotions. One of the reasons for developing this app was to try out non-relational databases.</p>
 <h3>Features:</h3>
 <ul>
